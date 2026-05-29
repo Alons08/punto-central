@@ -8,7 +8,7 @@ const products = [
         price: 15.00,
         specialPrice: null, // Si aplica, ej: { days: [3, 6], price: 12.00 }
         description: "1/4 de pollo a la brasa acompañado con papas y ensalada.",
-        image: "./images/menu/pollo-un-cuarto.jpg",
+        image: "./images/menu/pollo-a-la-brasa-cuarto.jpg",
         available: true
     },
     {
@@ -18,7 +18,7 @@ const products = [
         price: 28.00,
         specialPrice: null,
         description: "1/2 pollo a la brasa acompañado con papas y ensalada.",
-        image: "./images/menu/pollo-medio.jpg",
+        image: "./images/menu/pollo-a-la-brasa-medio.jpg",
         available: true
     },
     {
@@ -28,7 +28,7 @@ const products = [
         price: 55.00,
         specialPrice: null,
         description: "1 pollo entero a la brasa acompañado con papas y ensalada.",
-        image: "./images/menu/pollo-entero.jpg",
+        image: "./images/menu/pollo-a-la-brasa-entero.jpg",
         available: true
     },
 
@@ -114,7 +114,7 @@ const products = [
         price: 10.00,
         specialPrice: null,
         description: "Refrescante jugo natural de maracuyá de 1 litro.",
-        image: "./images/menu/jarra-maracuya.jpg",
+        image: "./images/menu/maracuya.jpg",
         available: true
     },
     {
@@ -134,7 +134,7 @@ const products = [
         price: 6.00,
         specialPrice: null,
         description: "Media jarra de jugo natural de maracuyá.",
-        image: "./images/menu/media-jarra-maracuya.jpg",
+        image: "./images/menu/maracuya-media.jpg",
         available: true
     },
     {
@@ -144,7 +144,7 @@ const products = [
         price: 10.00,
         specialPrice: null,
         description: "Limonada clásica preparada al momento de 1 litro.",
-        image: "./images/menu/jarra-limonada.jpg",
+        image: "./images/menu/limonada.jpg",
         available: true
     },
     {
@@ -154,7 +154,7 @@ const products = [
         price: 12.00,
         specialPrice: null,
         description: "Limonada granizada y refrescante de 1 litro.",
-        image: "./images/menu/limonada-frozen.jpg",
+        image: "./images/menu/limonada-frozen-1lt.jpg",
         available: true
     },
     {
@@ -164,7 +164,7 @@ const products = [
         price: 6.00,
         specialPrice: null,
         description: "Media jarra de limonada clásica natural.",
-        image: "./images/menu/media-jarra-limonada.jpg",
+        image: "./images/menu/limonada-media.jpg",
         available: true
     },
     {
@@ -174,7 +174,7 @@ const products = [
         price: 9.00,
         specialPrice: null,
         description: "Gaseosa Inka Cola de 1 litro ideal para compartir.",
-        image: "./images/menu/inkacola-1l.jpg",
+        image: "./images/menu/gaseosa-inca-1lt.jpg",
         available: true
     },
     {
@@ -184,7 +184,7 @@ const products = [
         price: 12.00,
         specialPrice: null,
         description: "Gaseosa Inka Cola de 1.5 litros mediano.",
-        image: "./images/menu/inkacola-1.5l.jpg",
+        image: "./images/menu/gaseosa-inca-1-5lt.jpg",
         available: true
     },
     {
@@ -194,7 +194,7 @@ const products = [
         price: 6.00,
         specialPrice: null,
         description: "Gaseosa Inka Cola formato botella gordita.",
-        image: "./images/menu/inkacola-gordita.jpg",
+        image: "./images/menu/gaseosa-gordita.jpg",
         available: true
     },
     {
@@ -214,7 +214,7 @@ const products = [
         price: 9.00,
         specialPrice: null,
         description: "Gaseosa Coca Cola sabor original de 1 litro.",
-        image: "./images/menu/cocacola-1l.jpg",
+        image: "./images/menu/gaseosa-coca-1lt.jpg",
         available: true
     },
     {
@@ -224,7 +224,7 @@ const products = [
         price: 12.00,
         specialPrice: null,
         description: "Gaseosa Coca Cola de 1.5 litros.",
-        image: "./images/menu/cocacola-1.5l.jpg",
+        image: "./images/menu/gaseosa-coca-1-5lt.jpg",
         available: true
     },
     {
@@ -234,7 +234,7 @@ const products = [
         price: 3.50,
         specialPrice: null,
         description: "Gaseosa Coca Cola en formato personal.",
-        image: "./images/menu/cocacola-personal.jpg",
+        image: "./images/menu/gaseosa-personal.jpg",
         available: true
     },
 
