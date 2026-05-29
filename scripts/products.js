@@ -273,7 +273,7 @@ const products = [
         id: 27,
         name: "Cerveza Cristal Grande",
         category: "cervezas",
-        price: 10.00,
+        price: 10.00, 
         specialPrice: null,
         description: "Cerveza Cristal en presentación botella grande.",
         image: "./images/menu/cerveza-cristal.jpg",
