@@ -106,7 +106,7 @@ const products = [
         available: true
     },
 
-    // BEBIDAS (SIN ALCOHOL)
+    // BEBIDAS 
     {
         id: 11,
         name: "Jarra Maracuyá 1 Litro",
@@ -246,7 +246,7 @@ const products = [
         price: 12.00,
         specialPrice: null,
         description: "Cerveza Cusqueña de trigo en presentación botella grande.",
-        image: "./images/menu/cerveza-cusquena-trigo.jpg",
+        image: "./images/menu/cerveza-trigo.jpg",
         available: true
     },
     {
