@@ -417,7 +417,7 @@ function submitOrder() {
     }
 
     // Construir mensaje para WhatsApp
-    let message = `¡Hola Pollería y Broastería Meche! Quiero realizar el siguiente pedido:\n\n`;
+    let message = `¡Hola Punto Central! Quiero realizar el siguiente pedido:\n\n`;
     message += `*DATOS DEL CLIENTE*\n`;
     message += `🙍‍♂️ *Nombre:* ${customerName}\n`;
     message += `📞 *Teléfono:* ${customerPhone}\n`;
