@@ -1,325 +1,282 @@
 // Array completo de productos
 const products = [
-    // PLATOS
+    // POLLOS A LA BRASA
     {
         id: 1,
         name: "1/4 Pollo a la Brasa",
-        category: "platos",
+        category: "pollos-a-la-brasa",
         price: 15.00,
-        specialPrice: { days: [3, 6], price: 12.00 }, // Miércoles (3) y Sábado (6)
-        description: "1/4 de pollo a la brasa con papas, cremas y ensalada.",
-        image: "./images/menu/brasa-cuarto.jpg",
+        specialPrice: null, // Si aplica, ej: { days: [3, 6], price: 12.00 }
+        description: "1/4 de pollo a la brasa acompañado con papas y ensalada.",
+        image: "./images/menu/pollo-un-cuarto.jpg",
         available: true
     },
     {
-        id: 102,
+        id: 2,
         name: "1/2 Pollo a la Brasa",
-        category: "platos",
-        price: 30.00,
-        specialPrice: { days: [3, 6], price: 24.00 }, // Miércoles (3) y Sábado (6)
-        description: "1/2 pollo a la brasa con papas, cremas y ensalada.",
-        image: "./images/menu/medio-pollo.jpg",
+        category: "pollos-a-la-brasa",
+        price: 28.00,
+        specialPrice: null,
+        description: "1/2 pollo a la brasa acompañado con papas y ensalada.",
+        image: "./images/menu/pollo-medio.jpg",
         available: true
     },
     {
         id: 3,
-        name: "Pollo a la Brasa Entero",
-        category: "platos",
-        price: 60.00,
-        specialPrice: { days: [3, 6], price: 48.00 }, // Miércoles (3) y Sábado (6)
-        description: "Pollo entero con papa, cremas, ensalada, porción de chaufa y gaseosa Pepsi 1.5L.",
+        name: "1 Pollo Entero",
+        category: "pollos-a-la-brasa",
+        price: 55.00,
+        specialPrice: null,
+        description: "1 pollo entero a la brasa acompañado con papas y ensalada.",
         image: "./images/menu/pollo-entero.jpg",
+        available: true
+    },
+
+    // SALCHIPAPAS
+    {
+        id: 4,
+        name: "Salchipapa Simple",
+        category: "salchipapas",
+        price: 9.00,
+        specialPrice: null,
+        description: "Clásica salchipapa con papas fritas y hot dog seleccionados.",
+        image: "./images/menu/salchipapa-simple.jpg",
         available: true
     },
     {
         id: 5,
-        name: "Broaster",
-        category: "platos",
+        name: "Salchipapa Alemana",
+        category: "salchipapas",
         price: 12.00,
-        description: "Porción de pollo broaster con papas.",
-        image: "./images/menu/broaster-12.jpg",
-        available: true
-    },
-    {
-        id: 104,
-        name: "Broaster",
-        category: "platos",
-        price: 18.00,
-        description: "Porción de pollo, chaufa, papas, ensalada y cremas.",
-        image: "./images/menu/broaster-18.jpg",
+        specialPrice: null,
+        description: "Deliciosa salchipapa con salchicha ahumada tipo alemana.",
+        image: "./images/menu/salchipapa-alemana.jpg",
         available: true
     },
     {
         id: 6,
-        name: "Mostrito",
-        category: "platos",
-        price: 13.00,
-        description: "Porción de pollo broaster con chaufa y papas.",
-        image: "./images/menu/mostritoo.jpg",
+        name: "Salchipapa Escolar",
+        category: "salchipapas",
+        price: 5.00,
+        specialPrice: null,
+        description: "Porción ideal personal de salchipapa económica.",
+        image: "./images/menu/salchipapa-escolar.jpg",
         available: true
     },
+
+    // PLATOS EXTRAS
     {
         id: 7,
-        name: "Hamburguesa de Carne",
-        category: "platos",
-        price: 5.00,
-        description: "Hamburguesa de carne con papas.",
-        image: "./images/menu/hamburguesa-carne.jpg",
+        name: "Mostro",
+        category: "platos-extras",
+        price: 17.00,
+        specialPrice: null,
+        description: "Contundente combinación de arroz chaufa con 1/4 de pollo a la brasa y papas.",
+        image: "./images/menu/mostro.jpg",
         available: true
     },
     {
         id: 8,
-        name: "Hamburguesa Broaster",
-        category: "platos",
-        price: 8.00,
-        description: "Hamburguesa de pollo broaster con papas.",
-        image: "./images/menu/hamburguesa-broaster.jpg",
+        name: "1/8 Mostrito",
+        category: "platos-extras",
+        price: 11.00,
+        specialPrice: null,
+        description: "Arroz chaufa acompañado de 1/8 de pollo a la brasa y papas fritas.",
+        image: "./images/menu/mostrito.jpg",
         available: true
     },
     {
         id: 9,
-        name: "Caldo de Gallina",
-        category: "platos",
-        price: 10.00,
-        description: "Caldo de gallina tradicional.",
-        image: "./images/menu/caldo-gallina.jpg",
-        available: true
-    },
-    {
-        id: 100,
-        name: "Brasa Mostrito",
-        category: "platos",
-        price: 16.00,
-        specialPrice: { days: [3, 6], price: 13.00 }, // Miércoles (3) y Sábado (6)
-        description: "Brasa mostrito: pollo a la brasa con chaufa y papas.",
-        image: "./images/menu/brasa-mostrito.jpg",
-        available: true
-    },
-    {
-        id: 101,
-        name: "Salchipapa",
-        category: "platos",
-        price: 10.00,
-        description: "Salchipapa tradicional.",
-        image: "./images/menu/salchipapa.jpg",
-        available: true
-    },
-    {
-        id: 101,
-        name: "Salchibrasa",
-        category: "platos",
-        price: 18.00,
-        description: "Salchibrasa tradicional.",
-        image: "./images/menu/salchibrasa.jpg",
+        name: "Chaufa de Pollo",
+        category: "platos-extras",
+        price: 12.00,
+        specialPrice: null,
+        description: "Clásico arroz chaufa al estilo chifa con trozos de pollo.",
+        image: "./images/menu/chaufa-pollo.jpg",
         available: true
     },
     {
         id: 10,
-        name: "Barco Meche",
-        category: "platos",
-        price: 100.00,
-        description: "1 Pollo entero + 4 porciones broaster + salchipapa + 2 hamburguesas + 1 jarra chicha + 2 porciones de chaufa + cremas + ensalada + chorizo + papa.",
-        image: "./images/menu/combo-barco.jpg",
+        name: "Aeropuerto",
+        category: "platos-extras",
+        price: 12.00,
+        specialPrice: null,
+        description: "Combinación de arroz chaufa, tallarín saltado y frijolito chino.",
+        image: "./images/menu/aeropuerto.jpg",
         available: true
     },
+
+    // BEBIDAS (SIN ALCOHOL)
     {
         id: 11,
-        name: "Combo Broaster",
-        category: "platos",
-        price: 50.00,
-        description: "4 piezas de broaster, papa, cremas, ensalada, porción de chaufa y gaseosa Pepsi 1.5L.",
-        image: "./images/menu/combo-broaster.jpg",
+        name: "Jarra Maracuyá 1 Litro",
+        category: "bebidas",
+        price: 10.00,
+        specialPrice: null,
+        description: "Refrescante jugo natural de maracuyá de 1 litro.",
+        image: "./images/menu/jarra-maracuya.jpg",
         available: true
     },
-    // BEBIDAS
+    {
+        id: 12,
+        name: "Maracuyá Frozen 1 Litro",
+        category: "bebidas",
+        price: 12.00,
+        specialPrice: null,
+        description: "Jugo de maracuyá granizado ultra helado de 1 litro.",
+        image: "./images/menu/maracuya-frozen.jpg",
+        available: true
+    },
+    {
+        id: 13,
+        name: "Media Jarra Maracuyá",
+        category: "bebidas",
+        price: 6.00,
+        specialPrice: null,
+        description: "Media jarra de jugo natural de maracuyá.",
+        image: "./images/menu/media-jarra-maracuya.jpg",
+        available: true
+    },
+    {
+        id: 14,
+        name: "Jarra Limonada 1 Litro",
+        category: "bebidas",
+        price: 10.00,
+        specialPrice: null,
+        description: "Limonada clásica preparada al momento de 1 litro.",
+        image: "./images/menu/jarra-limonada.jpg",
+        available: true
+    },
+    {
+        id: 15,
+        name: "Limonada Frozen 1 Litro",
+        category: "bebidas",
+        price: 12.00,
+        specialPrice: null,
+        description: "Limonada granizada y refrescante de 1 litro.",
+        image: "./images/menu/limonada-frozen.jpg",
+        available: true
+    },
+    {
+        id: 16,
+        name: "Media Jarra Limonada",
+        category: "bebidas",
+        price: 6.00,
+        specialPrice: null,
+        description: "Media jarra de limonada clásica natural.",
+        image: "./images/menu/media-jarra-limonada.jpg",
+        available: true
+    },
+    {
+        id: 17,
+        name: "Inka Cola 1 Litro",
+        category: "bebidas",
+        price: 9.00,
+        specialPrice: null,
+        description: "Gaseosa Inka Cola de 1 litro ideal para compartir.",
+        image: "./images/menu/inkacola-1l.jpg",
+        available: true
+    },
+    {
+        id: 18,
+        name: "Inka Cola 1 1/2 Litro",
+        category: "bebidas",
+        price: 12.00,
+        specialPrice: null,
+        description: "Gaseosa Inka Cola de 1.5 litros mediano.",
+        image: "./images/menu/inkacola-1.5l.jpg",
+        available: true
+    },
+    {
+        id: 19,
+        name: "Inka Cola Gordita",
+        category: "bebidas",
+        price: 6.00,
+        specialPrice: null,
+        description: "Gaseosa Inka Cola formato botella gordita.",
+        image: "./images/menu/inkacola-gordita.jpg",
+        available: true
+    },
     {
         id: 20,
-        name: "Agua Cielo",
+        name: "Inka Cola Personal Vidrio",
         category: "bebidas",
-        price: 2.00,
-        description: "Botella de agua Cielo.",
-        image: "./images/menu/agua-mineral.jpg",
+        price: 3.50,
+        specialPrice: null,
+        description: "Inka Cola personal en botella de vidrio retornable.",
+        image: "./images/menu/inkacola-personal.jpg",
         available: true
     },
     {
         id: 21,
-        name: "Coca Cola 500ml",
+        name: "Coca Cola 1 Litro",
         category: "bebidas",
-        price: 3.00,
-        description: "Botella de Coca Cola 500ml.",
-        image: "./images/menu/gaseosa-coca-500ml.jpg",
+        price: 9.00,
+        specialPrice: null,
+        description: "Gaseosa Coca Cola sabor original de 1 litro.",
+        image: "./images/menu/cocacola-1l.jpg",
         available: true
     },
     {
         id: 22,
-        name: "Inka Kola 500ml",
+        name: "Coca Cola 1 1/2 Litro",
         category: "bebidas",
-        price: 3.00,
-        description: "Botella de Inka Kola 500ml.",
-        image: "./images/menu/gaseosa-inka-500ml.jpg",
-        available: true
-    },
-    {
-        id: 22,
-        name: "Pepsi",
-        category: "bebidas",
-        price: 2.00,
-        description: "Botella de Pepsi.",
-        image: "./images/menu/gaseosa-pepsi.jpg",
+        price: 12.00,
+        specialPrice: null,
+        description: "Gaseosa Coca Cola de 1.5 litros.",
+        image: "./images/menu/cocacola-1.5l.jpg",
         available: true
     },
     {
         id: 23,
-        name: "Coca Cola 1.5L",
+        name: "Coca Cola Personal",
         category: "bebidas",
-        price: 8.00,
-        description: "Botella de Coca Cola 1.5L.",
-        image: "./images/menu/gaseosa-coca-1-5lt.jpg",
+        price: 3.50,
+        specialPrice: null,
+        description: "Gaseosa Coca Cola en formato personal.",
+        image: "./images/menu/cocacola-personal.jpg",
         available: true
     },
+
+    // CERVEZAS
     {
         id: 24,
-        name: "Inka Kola 1.5L",
-        category: "bebidas",
-        price: 8.00,
-        description: "Botella de Inka Kola 1.5L.",
-        image: "./images/menu/gaseosa-inca-1-5lt.jpg",
-        available: true
-    },
-    {
-        id: 24,
-        name: "Fanta 500ml",
-        category: "bebidas",
-        price: 4.00,
-        description: "Botella de Fanta 500ml.",
-        image: "./images/menu/gaseosa-fanta.jpg",
+        name: "Cerveza Cusqueña Trigo Grande",
+        category: "cervezas",
+        price: 12.00,
+        specialPrice: null,
+        description: "Cerveza Cusqueña de trigo en presentación botella grande.",
+        image: "./images/menu/cerveza-cusquena-trigo.jpg",
         available: true
     },
     {
         id: 25,
-        name: "Gordita Inka",
-        category: "bebidas",
-        price: 5.00,
-        description: "Botella de Inka Kola grande.",
-        image: "./images/menu/gaseosa-gordita.jpg",
-        available: true
-    },
-    {
-        id: 26,
-        name: "Gatorade",
-        category: "bebidas",
-        price: 3.00,
-        description: "Botella de Gatorade.",
-        image: "./images/menu/gatorade.jpg",
-        available: true
-    },
-    {
-        id: 27,
-        name: "Chicha 1L Jarra",
-        category: "bebidas",
-        price: 8.00,
-        description: "Jarra de chicha de 1 litro.",
-        image: "./images/menu/chicha-morada.jpg",
-        available: true
-    },
-    // TRAGOS
-    {
-        id: 30,
-        name: "Cerveza Pilsen",
-        category: "tragos",
-        price: 9.00,
-        description: "Botella de cerveza Pilsen.",
+        name: "Cerveza Pilsen Grande",
+        category: "cervezas",
+        price: 10.00,
+        specialPrice: null,
+        description: "Cerveza Pilsen Callao tradicional en botella grande.",
         image: "./images/menu/cerveza-pilsen.jpg",
         available: true
     },
     {
-        id: 31,
-        name: "Cusqueña Trigo",
-        category: "tragos",
-        price: 9.00,
-        description: "Botella de Cusqueña Trigo.",
-        image: "./images/menu/cerveza-trigo.jpg",
-        available: true
-    },
-    {
-        id: 32,
-        name: "Cusqueña Negra",
-        category: "tragos",
-        price: 9.00,
-        description: "Botella de Cusqueña Negra.",
+        id: 26,
+        name: "Cerveza Negra Grande",
+        category: "cervezas",
+        price: 12.00,
+        specialPrice: null,
+        description: "Cerveza negra Cusqueña / Pilsen en botella grande.",
         image: "./images/menu/cerveza-negra.jpg",
         available: true
     },
     {
-        id: 33,
-        name: "Pisco Sour",
-        category: "tragos",
-        price: 28.00,
-        description: "Copa de Pisco Sour.",
-        image: "./images/menu/pisco-sour.jpg",
-        available: true
-    },
-    {
-        id: 34,
-        name: "Vino Tabernero Rosé",
-        category: "tragos",
-        price: 29.00,
-        description: "Botella de vino Tabernero Rosé.",
-        image: "./images/menu/vino-rose.jpg",
-        available: true
-    },
-    {
-        id: 35,
-        name: "Vino Tabernero Borgoña",
-        category: "tragos",
-        price: 29.00,
-        description: "Botella de vino Tabernero Borgoña.",
-        image: "./images/menu/vino-borgona.jpg",
-        available: true
-    },
-    {
-        id: 36,
-        name: "Chilcano 275ml",
-        category: "tragos",
-        price: 11.00,
-        description: "Botella de Chilcano 275ml.",
-        image: "./images/menu/chilcano.jpg",
-        available: true
-    },
-    {
-        id: 37,
-        name: "Whisky Red Label",
-        category: "tragos",
-        price: 60.00,
-        description: "Botella de Whisky Red Label.",
-        image: "./images/menu/whisky-red-label.jpg",
-        available: true
-    },
-    {
-        id: 38,
-        name: "Monster",
-        category: "tragos",
+        id: 27,
+        name: "Cerveza Cristal Grande",
+        category: "cervezas",
         price: 10.00,
-        description: "Lata de Monster.",
-        image: "./images/menu/monster.jpg",
-        available: true
-    },
-    {
-        id: 39,
-        name: "Heineken 473ml",
-        category: "tragos",
-        price: 8.00,
-        description: "Lata de Heineken 473ml.",
-        image: "./images/menu/heineken.jpg",
-        available: true
-    },
-    {
-        id: 40,
-        name: "Red Bull",
-        category: "tragos",
-        price: 9.00,
-        description: "Lata de Red Bull.",
-        image: "./images/menu/redbull.jpg",
+        specialPrice: null,
+        description: "Cerveza Cristal en presentación botella grande.",
+        image: "./images/menu/cerveza-cristal.jpg",
         available: true
     }
 ];
@@ -335,7 +292,7 @@ function getProductPrice(product) {
     return product.price;
 }
 
-function renderProducts(category = 'comidas') {
+function renderProducts(category = 'pollos-a-la-brasa') {
     const menuItemsContainer = document.getElementById('menu-items');
     if (!menuItemsContainer) return;
 
@@ -442,7 +399,7 @@ function setupProductEvents() {
 }
 
 function initProducts() {
-    renderProducts('platos');
+    renderProducts('pollos-a-la-brasa');
     setupFilters();
     setupProductEvents();
 }
