@@ -1,6 +1,11 @@
+.social-icons a.tiktok-icon,
+.tiktok-icon .fa-tiktok {
+  color: #fff !important;
+}
+
 :root {
-    --primary-color: #f39c12;
-    --primary-dark: #e67e22;
+    --primary-color: #f82324;
+    --primary-dark: #d21b1f;
     --white: #ffffff;
     --black: #333333;
     --gray: #777777;
@@ -781,6 +786,17 @@ body {
     background-color: var(--white);
 }
 
+/* Centrar el botón principal dentro del primer formulario (cart footer) */
+.cart-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-footer .cart-total {
+    width: 100%;
+}
+
 .cart-total {
     display: flex;
     justify-content: space-between;
@@ -792,6 +808,21 @@ body {
 /* Formulario del carrito */
 .form-group {
     margin-bottom: 15px;
+}
+
+/* Botones específicos: hacer verdes solo los botones de enviar/realizar pedido */
+#checkout.btn.btn-primary,
+#submit-order.btn.btn-primary {
+    background-color: var(--success-color);
+    color: var(--white);
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+#checkout.btn.btn-primary:hover,
+#submit-order.btn.btn-primary:hover {
+    background-color: #27ae60; /* variante más oscura */
+    transform: translateY(-3px);
 }
 
 .form-group label {
